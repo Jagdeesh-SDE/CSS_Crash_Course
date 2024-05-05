@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selectors</title>
+    <style>
+      div > p {
+        color: blue;
+      }
+      /* div + p {
+        color: tomato;
+      } */
+      div ~ p {
+        color: peru;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container -1 -->
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>para 2</p>
+    </div>
+    <!-- container - 2 -->
+    <div>
+      <section>
+        <p>Grand Child</p>
+      </section>
+    </div>
+    <section>section - 2</section>
+    <p>outside of div</p>
+  </body>
+</html>

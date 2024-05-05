@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Position</title>
+    <!-- styling for explanation purpose -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        /* padding: 10px; */
+        font-size: 10px;
+        line-height: 70px;
+        text-align: center;
+        border: 20px solid rgb(249, 246, 86);
+        /* height: 100vh; */
+        width: 100%;
+      }
+
+      .parent-ref {
+        border: 4px dashed tomato;
+        width: 78px;
+        height: 78px;
+        position: absolute;
+        top: 34px;
+        left: 34px;
+      }
+
+      .parent {
+        border: 5px solid #000;
+        height: 90vh;
+        padding: 13.5px;
+      }
+
+      .box {
+        width: 70px;
+        height: 70px;
+        background-color: rgb(181, 120, 239);
+        border: 2px solid #3c1577;
+        /* margin: 5px; */
+      }
+    </style>
+
+    <!-- Live -->
+    <style>
+      .parent {
+        /* position: relative; */
+      }
+
+      .box {
+        position: absolute;
+        left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box">Box 1</div>
+    </div>
+
+    <!-- ----------------------------- -->
+
+    <!-- 
+
+
+
+
+        
+
+        Just Space
+
+
+
+
+
+     -->
+    <div class="parent-ref"></div>
+  </body>
+</html>

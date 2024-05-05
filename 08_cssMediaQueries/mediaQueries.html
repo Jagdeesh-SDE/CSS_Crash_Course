@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+    <style>
+      body {
+        background-color: #b483e3;
+      }
+
+      /* 401px to 640px */
+      /* 640px to 640px++ */
+      @media screen and (min-width: 640px) {
+        body {
+          background-color: #e5ee81;
+        }
+      }
+
+      /* 0px to 400px */
+      @media screen and (max-width: 400px) {
+        body {
+          background-color: #ee81d6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center" id="head1"></h1>
+    <!-- Concepts -->
+    <h3>Concepts :</h3>
+    <ul>
+      <li>Specificity</li>
+      <li>Css Units</li>
+      <li>How to work with images in css</li>
+      <li>How to work with borders & background-images</li>
+    </ul>
+    <h3>Websites :</h3>
+    <ul>
+      <li>Flexbox froggy</li>
+      <li>css grid attack / codingfantasy</li>
+      <li>css tricks</li>
+      <li>w3-schools</li>
+      <li>Mdn Docs</li>
+    </ul>
+    <script>
+      let head1 = document.querySelector("#head1");
+      head1.innerHTML = window.innerWidth + " px";
+      window.addEventListener("resize", () => {
+        head1.innerHTML = window.innerWidth + " px";
+      });
+      //   window.onresize =
+    </script>
+  </body>
+</html>

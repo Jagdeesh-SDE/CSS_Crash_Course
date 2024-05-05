@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box Properties</title>
+    <!-- styling - for explanation -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 10px;
+        font-size: 10px;
+        line-height: 30px;
+        text-align: center;
+      }
+
+      .refBoxes {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 15px;
+        line-height: 28vh;
+      }
+
+      .refBox {
+        color: #0000008f;
+        width: 31.7vw;
+        height: 29.5vh;
+        /* border: 2px solid #3c1577;
+        background-color: #c2bcbc; */
+      }
+
+      .refLines {
+        border: 2px dashed rgba(255, 99, 71, 0.436);
+        border-top: 2px;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .h-line-1 {
+        width: 95vw;
+        top: 128px;
+      }
+
+      .v-line-1 {
+        border-left: 2px;
+        height: 90vh;
+        top: 10px;
+        left: 35vw;
+      }
+
+      .v-line-2 {
+        border-left: 2px;
+        height: 90vh;
+        top: 10px;
+        left: 67vh;
+      }
+
+      .h-line-2 {
+        width: 95vw;
+        top: 260px;
+      }
+
+      .box {
+        width: 30px;
+        height: 30px;
+        background-color: rgb(181, 120, 239);
+        border: 2px solid #3c1577;
+        margin: 5px;
+      }
+
+      .parent {
+        border: 5px solid #000;
+        height: 90vh;
+      }
+    </style>
+    <!-- live  -->
+    <style>
+      .parent {
+        display: flex;
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        /* flex-wrap: wrap; */
+        /* flex-flow: column wrap;
+        align-content: center; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+
+    <!-- 
+
+
+
+
+
+
+        for spacing
+
+
+        
+     -->
+
+    <!-- Reference - numbers -->
+    <div class="refBoxes">
+      <div class="refBox">1</div>
+      <div class="refBox">2</div>
+      <div class="refBox">3</div>
+      <div class="refBox">4</div>
+      <div class="refBox">5</div>
+      <div class="refBox">6</div>
+      <div class="refBox">7</div>
+      <div class="refBox">8</div>
+      <div class="refBox">9</div>
+    </div>
+
+    <!-- Reference Lines -->
+    <div>
+      <div class="refLines h-line-1"></div>
+      <div class="refLines h-line-2"></div>
+      <div class="refLines v-line-1"></div>
+      <div class="refLines v-line-2"></div>
+    </div>
+  </body>
+</html>

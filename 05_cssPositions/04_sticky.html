@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Position</title>
+    <!-- styling for explanation purpose -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        /* padding: 10px; */
+        font-size: 10px;
+        color: #00000058;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        /* border: 20px solid rgb(249, 246, 86); */
+        /* height: 100vh; */
+        width: 100%;
+      }
+
+      .parent {
+        border: 5px solid #000;
+        /* height: 90vh; */
+        padding: 2px;
+      }
+
+      .box {
+        width: 70px;
+        height: 70px;
+        background-color: rgb(181, 120, 239);
+        border: 2px solid #3c1577;
+        /* margin: 5px; */
+      }
+
+      nav {
+        background-color: plum;
+        border: 2px solid purple;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+
+      nav > ul {
+        display: flex;
+        color: #000;
+        justify-content: space-between;
+      }
+    </style>
+
+    <!-- Live -->
+    <style>
+      nav {
+        position: sticky;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- Content -->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores aut
+        in mollitia excepturi voluptatem fugit incidunt neque ipsum temporibus
+        ducimus, et nobis illum deserunt corporis, maxime natus rem autem
+        aspernatur ratione voluptates minus suscipit officia amet? Odit quae
+        distinctio dicta cupiditate inventore. Fugit, perferendis tenetur
+        voluptates a earum ducimus nisi nemo maxime id, quidem beatae pariatur,
+        repellendus quibusdam saepe temporibus porro molestias error laborum
+        ratione impedit! Dolorum blanditiis modi labore nostrum velit natus
+        laborum architecto tenetur sequi doloremque vero ut eaque qui iure,
+        eligendi consequuntur! Quisquam sed recusandae cupiditate esse id
+        impedit ipsa quibusdam sit, hic explicabo omnis repudiandae nulla.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+        laboriosam odio illum dignissimos esse sit, dolorem, consequatur id,
+        aliquid in mollitia omnis. Qui saepe repellat assumenda rem sunt maiores
+        nostrum, quos non mollitia inventore molestiae ipsam nihil temporibus
+        ipsum sit alias fugiat reprehenderit provident aliquid repudiandae quae
+        dolorum harum? Voluptate, non cum illo est sint dignissimos eveniet,
+        voluptatem quisquam mollitia expedita vel aliquid vitae ad cupiditate
+        quae error veritatis nemo architecto, cumque iusto fugit praesentium?
+        Aspernatur accusamus iure quo asperiores. Enim, quam. Nesciunt deleniti
+        quis, corrupti tempore sequi libero officiis mollitia ad qui
+        consequuntur magni itaque dolor pariatur veniam eveniet? Temporibus
+        obcaecati nihil dolor ex, eveniet laborum. Doloribus mollitia deleniti
+        rem velit, ratione amet architecto blanditiis quibusdam? Dolor delectus
+        nulla nihil ea fugit cumque adipisci ad repellendus. Id, at saepe
+        similique laudantium in veniam architecto delectus consequatur velit aut
+        sequi, minus atque deleniti obcaecati? Quibusdam reiciendis rerum totam
+        accusamus possimus, doloremque voluptates sint voluptatem vel obcaecati
+        expedita dolores natus enim temporibus tempore ipsa, facilis dignissimos
+        dicta eveniet nihil iure provident voluptatibus illo. Sint, cumque
+        quisquam aliquam totam, amet expedita facilis fuga porro, fugiat a eaque
+        praesentium repellat sed minima dolor maxime hic earum odit quam fugit
+        eius repudiandae! Ipsa, commodi.
+      </p>
+      <nav>
+        <ul type="none">
+          <li>link-1</li>
+          <li>link-2</li>
+          <li>link-3</li>
+        </ul>
+      </nav>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+        laboriosam odio illum dignissimos esse sit, dolorem, consequatur id,
+        aliquid in mollitia omnis. Qui saepe repellat assumenda rem sunt maiores
+        nostrum, quos non mollitia inventore molestiae ipsam nihil temporibus
+        ipsum sit alias fugiat reprehenderit provident aliquid repudiandae quae
+        dolorum harum? Voluptate, non cum illo est sint dignissimos eveniet,
+        voluptatem quisquam mollitia expedita vel aliquid vitae ad cupiditate
+        quae error veritatis nemo architecto, cumque iusto fugit praesentium?
+        Aspernatur accusamus iure quo asperiores. Enim, quam. Nesciunt deleniti
+        quis, corrupti tempore sequi libero officiis mollitia ad qui
+        consequuntur magni itaque dolor pariatur veniam eveniet? Temporibus
+        obcaecati nihil dolor ex, eveniet laborum. Doloribus mollitia deleniti
+        rem velit, ratione amet architecto blanditiis quibusdam? Dolor delectus
+        nulla nihil ea fugit cumque adipisci ad repellendus. Id, at saepe
+        similique laudantium in veniam architecto delectus consequatur velit aut
+        sequi, minus atque deleniti obcaecati? Quibusdam reiciendis rerum totam
+        accusamus possimus, doloremque voluptates sint voluptatem vel obcaecati
+        expedita dolores natus enim temporibus tempore ipsa, facilis dignissimos
+        dicta eveniet nihil iure provident voluptatibus illo. Sint, cumque
+        quisquam aliquam totam, amet expedita facilis fuga porro, fugiat a eaque
+        praesentium repellat sed minima dolor maxime hic earum odit quam fugit
+        eius repudiandae! Ipsa, commodi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+        laboriosam odio illum dignissimos esse sit, dolorem, consequatur id,
+        aliquid in mollitia omnis. Qui saepe repellat assumenda rem sunt maiores
+        nostrum, quos non mollitia inventore molestiae ipsam nihil temporibus
+        ipsum sit alias fugiat reprehenderit provident aliquid repudiandae quae
+        dolorum harum? Voluptate, non cum illo est sint dignissimos eveniet,
+        voluptatem quisquam mollitia expedita vel aliquid vitae ad cupiditate
+        quae error veritatis nemo architecto, cumque iusto fugit praesentium?
+        Aspernatur accusamus iure quo asperiores. Enim, quam. Nesciunt deleniti
+        quis, corrupti tempore sequi libero officiis mollitia ad qui
+        consequuntur magni itaque dolor pariatur veniam eveniet? Temporibus
+        obcaecati nihil dolor ex, eveniet laborum. Doloribus mollitia deleniti
+        rem velit, ratione amet architecto blanditiis quibusdam? Dolor delectus
+        nulla nihil ea fugit cumque adipisci ad repellendus. Id, at saepe
+        similique laudantium in veniam architecto delectus consequatur velit aut
+        sequi, minus atque deleniti obcaecati? Quibusdam reiciendis rerum totam
+        accusamus possimus, doloremque voluptates sint voluptatem vel obcaecati
+        expedita dolores natus enim temporibus tempore ipsa, facilis dignissimos
+        dicta eveniet nihil iure provident voluptatibus illo. Sint, cumque
+        quisquam aliquam totam, amet expedita facilis fuga porro, fugiat a eaque
+        praesentium repellat sed minima dolor maxime hic earum odit quam fugit
+        eius repudiandae! Ipsa, commodi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+        laboriosam odio illum dignissimos esse sit, dolorem, consequatur id,
+        aliquid in mollitia omnis. Qui saepe repellat assumenda rem sunt maiores
+        nostrum, quos non mollitia inventore molestiae ipsam nihil temporibus
+        ipsum sit alias fugiat reprehenderit provident aliquid repudiandae quae
+        dolorum harum? Voluptate, non cum illo est sint dignissimos eveniet,
+        voluptatem quisquam mollitia expedita vel aliquid vitae ad cupiditate
+        quae error veritatis nemo architecto, cumque iusto fugit praesentium?
+        Aspernatur accusamus iure quo asperiores. Enim, quam. Nesciunt deleniti
+        quis, corrupti tempore sequi libero officiis mollitia ad qui
+        consequuntur magni itaque dolor pariatur veniam eveniet? Temporibus
+        obcaecati nihil dolor ex, eveniet laborum. Doloribus mollitia deleniti
+        rem velit, ratione amet architecto blanditiis quibusdam? Dolor delectus
+        nulla nihil ea fugit cumque adipisci ad repellendus. Id, at saepe
+        similique laudantium in veniam architecto delectus consequatur velit aut
+        sequi, minus atque deleniti obcaecati? Quibusdam reiciendis rerum totam
+        accusamus possimus, doloremque voluptates sint voluptatem vel obcaecati
+        expedita dolores natus enim temporibus tempore ipsa, facilis dignissimos
+        dicta eveniet nihil iure provident voluptatibus illo. Sint, cumque
+        quisquam aliquam totam, amet expedita facilis fuga porro, fugiat a eaque
+        praesentium repellat sed minima dolor maxime hic earum odit quam fugit
+        eius repudiandae! Ipsa, commodi.
+      </p>
+    </div>
+
+    <!-- ----------------------------- -->
+
+    <!-- 
+
+
+
+
+        
+
+        Just Space
+
+
+
+
+
+     -->
+    <div class="parent-ref"></div>
+  </body>
+</html>

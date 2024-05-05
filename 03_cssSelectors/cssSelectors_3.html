@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element Selectors</title>
+    <style>
+      p:hover,
+      button:hover {
+        color: tomato;
+      }
+      button:hover {
+        background-color: plum;
+      }
+
+      input::placeholder {
+        color: blue;
+      }
+
+      ::selection {
+        background-color: greenyellow;
+        color: black;
+      }
+
+      input[type="text"] {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button>Submit</button>
+    <input type="text" placeholder="email" />
+  </body>
+</html>

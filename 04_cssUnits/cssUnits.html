@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Units</title>
+    <style>
+      html {
+        font-size: 2px;
+      }
+      body {
+        font-size: 12px;
+        height: 100vh;
+      }
+      p {
+        font-size: 2rem;
+        /* 1em = 16px ==> default */
+      }
+      .box {
+        width: 100vw;
+        height: 80%;
+        background-color: chartreuse;
+        line-height: 100px;
+        text-align: center;
+      }
+
+      /* first --> relative */
+      /* 1. % or vh/vw */
+      /* 2. rem */
+      /* 3. em */
+      /* second --> absolute */
+      /* 4. px */
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="box">Box1</div>
+  </body>
+</html>
